@@ -7,7 +7,6 @@ timer_estado = tempo_estado;
 range = 10;
 //Criando estrutura com sprites dele
 dano_valor = 1;
-dano = noone;
 
 sprite = 
 {
@@ -19,7 +18,7 @@ sprite =
 	Walk : Spr_Caracol_Idle,
 };
 
-
+image_index_limit = 3
 
 destino_x = 0
 destino_y = 0;
@@ -94,7 +93,7 @@ estado_attack.inicia = function(){
 estado_attack.roda = function(){
 	
 	//criando o meu dano
-	if(dano == noone && image_index >= 7){
+	if(dano == noone && image_index >= image_index_limit){
 		dano = instance_create_depth(x, y, depth, Obj_Inimigo_Dano);
 		dano.dano = dano_valor;
 	}

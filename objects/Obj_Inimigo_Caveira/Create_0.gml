@@ -6,19 +6,19 @@ timer_estado = tempo_estado;
 
 range = 10;
 //Criando estrutura com sprites dele
-dano_valor = 1;
+dano_valor = 2;
 
 sprite = 
 {
-	AttackBack : Spr_Slime2_Attack_Back,
-	Attack : Spr_Slime_Attack,
-	Death : Spr_Slime_Death,
-	Hurt : Spr_Slime_Hurt,
-	Idle : Spr_Slime_Idle,
-	Walk : Spr_Slime_Walk,
+	AttackBack : Spr_Caveira_Hit,
+	Attack : Spr_Caveira_Hit,
+	Death : Spr_Caveira_Idle,
+	Hurt : Spr_Caveira_Idle,
+	Idle : Spr_Caveira_Idle,
+	Walk : Spr_Caveira_Idle,
 };
 
-
+image_index_limit = 3
 
 destino_x = 0
 destino_y = 0;
@@ -93,7 +93,7 @@ estado_attack.inicia = function(){
 estado_attack.roda = function(){
 	
 	//criando o meu dano
-	if(dano == noone && image_index >= 7){
+	if(dano == noone && image_index >= image_index_limit){
 		dano = instance_create_depth(x, y, depth, Obj_Inimigo_Dano);
 		dano.dano = dano_valor;
 	}
@@ -177,7 +177,7 @@ estado_hunt.roda = function(){
 		troca_estado(estado_idle);
 	}
 	//seguindo o alvo
-	mp_potential_step_object(alvo.x, alvo.y, 1, Obj_Collider1);
+	mp_potential_step_object(alvo.x, alvo.y, 2, Obj_Collider1);
 	
 	//ataca o player
 	var _dist = point_distance(x, y, alvo.x, alvo.y)
