@@ -214,6 +214,4 @@ estado_hunt.roda = function(){
 }
 #endregion 
 
-
-
 inicia_estado(estado_idle);

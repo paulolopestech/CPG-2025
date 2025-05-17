@@ -1,12 +1,14 @@
-/// @description Inserir descrição aqui
-// Você pode escrever seu código neste editor
-
-tempo_estado = game_get_speed(gamespeed_fps)*10; //tempo de 10 segundos!!
-timer_estado = tempo_estado;
-
+event_inherited();
+image_index_attack_limit = 3;
 range = 10;
-//Criando estrutura com sprites dele
 dano_valor = 1;
+destino_x = 0
+destino_y = 0;
+alvo = noone;
+morreu = false;
+tempo_estado = game_get_speed(gamespeed_fps)*10;
+timer_estado = tempo_estado;
+obj_speed = 0.5
 
 sprite = 
 {
@@ -17,17 +19,6 @@ sprite =
 	Idle : Spr_Caracol_Idle,
 	Walk : Spr_Caracol_Idle,
 };
-
-image_index_limit = 3
-
-destino_x = 0
-destino_y = 0;
-alvo = noone;
-morreu = false;
-
-// Inherit the parent event
-event_inherited();
-
 #region estados
 
 estado_idle.inicia = function(){
@@ -41,7 +32,6 @@ estado_idle.inicia = function(){
 	
 	timer_estado = tempo_estado;
 	//image_blend = c_white;
-	
 }
 
 estado_idle.roda = function(){
@@ -93,7 +83,7 @@ estado_attack.inicia = function(){
 estado_attack.roda = function(){
 	
 	//criando o meu dano
-	if(dano == noone && image_index >= image_index_limit){
+	if(dano == noone && image_index >= image_index_attack_limit){
 		dano = instance_create_depth(x, y, depth, Obj_Inimigo_Dano);
 		dano.dano = dano_valor;
 	}
@@ -188,32 +178,7 @@ estado_hunt.roda = function(){
 	
 	//olha pro lado certo
 	xscale = sign(alvo.x - x);
-	
-	/////avisando o povo
-	
-	//checa quantos tem
-	var _n = instance_number(object_index);
-	
-	//passando por todos objetos iguais
-	for (var i = 0; i < _n; i++){
-		
-		var _slime = instance_find(object_index, i);
-		if(_slime != id) {//checa se não estou olhando pra mim mesmo
-			
-			if(_slime.alvo != alvo){
-				var _dist2 = point_distance(x, y, _slime.x, _slime.y)
-				if(_dist2 < 80){
-					with(_slime){
-						troca_estado(estado_hunt);
-					}
-				}
-			}
-		}
-	
-	}
 }
 #endregion 
-
-
 
 inicia_estado(estado_idle);

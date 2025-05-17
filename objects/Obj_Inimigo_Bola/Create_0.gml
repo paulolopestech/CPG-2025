@@ -196,7 +196,7 @@ estado_hunt.roda = function(){
 	
 	//passando por todos objetos iguais
 	for (var i = 0; i < _n; i++){
-		
+		 
 		var _slime = instance_find(object_index, i);
 		if(_slime != id) {//checa se não estou olhando pra mim mesmo
 			

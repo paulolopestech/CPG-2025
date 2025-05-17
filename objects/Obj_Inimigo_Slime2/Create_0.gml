@@ -1,7 +1,3 @@
-       /// @description Inserir descrição aqui
-// Você pode escrever seu código neste editor
-
-// Inherit the parent event
 event_inherited();
 image_blend = 2;
 range = 30;
@@ -16,8 +12,6 @@ sprite =
 	Idle : Spr_Slime2_Idle,
 	Walk : Spr_Slime2_Walk,
 };
-
-
 
 estado_attack.inicia = function(){
 	

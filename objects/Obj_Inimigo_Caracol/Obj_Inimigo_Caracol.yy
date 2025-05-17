@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Spr_Caracol_Hit",
-    "path":"sprites/Spr_Caracol_Hit/Spr_Caracol_Hit.yy",
+    "name":"Spr_Caracol_Idle",
+    "path":"sprites/Spr_Caracol_Idle/Spr_Caracol_Idle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

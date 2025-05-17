@@ -31,3 +31,6 @@
   - perseguição
     - limite: 30
 
+## DINAMICA DE XP E PODER
+- na medida que a xp do personagem aumenta, seu ataque e sua vida diminuem
+- 

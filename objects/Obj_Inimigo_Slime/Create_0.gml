@@ -3,10 +3,12 @@
 
 tempo_estado = game_get_speed(gamespeed_fps)*10; //tempo de 10 segundos!!
 timer_estado = tempo_estado;
-
 range = 10;
-//Criando estrutura com sprites dele
 dano_valor = 1;
+destino_x = 0
+destino_y = 0;
+alvo = noone;
+morreu = false;
 
 sprite = 
 {
@@ -18,16 +20,7 @@ sprite =
 	Walk : Spr_Slime_Walk,
 };
 
-
-
-destino_x = 0
-destino_y = 0;
-alvo = noone;
-morreu = false;
-
-// Inherit the parent event
 event_inherited();
-
 #region estados
 
 estado_idle.inicia = function(){
@@ -41,7 +34,6 @@ estado_idle.inicia = function(){
 	
 	timer_estado = tempo_estado;
 	//image_blend = c_white;
-	
 }
 
 estado_idle.roda = function(){
