@@ -1,0 +1,2 @@
+thisCharacter = noone;
+colision++;

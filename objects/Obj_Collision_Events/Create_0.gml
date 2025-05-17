@@ -1,0 +1,11 @@
+Interagir = noone;
+Criar = noone;
+eventos[0] = 0;
+nEventos = 0;
+activateLayer = noone;
+deactivateLayer = noone;
+flag = false;
+novoSprite = noone;
+novoX = 0;
+novoY = 0;
+novaEscala = 1;
