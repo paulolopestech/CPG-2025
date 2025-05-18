@@ -1,12 +1,12 @@
  /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
-vida = 50;
+vida = 90;
 tempo_estado = game_get_speed(gamespeed_fps)*10; //tempo de 10 segundos!!
 timer_estado = tempo_estado;
 
 range = 20;
 //Criando estrutura com sprites dele
-dano_valor = 5;
+dano_valor = 9;
 
 sprite = 
 {

@@ -69,6 +69,8 @@
     {"name":"inst_5ABF9784","path":"rooms/Cena2/Cena2.yy",},
     {"name":"inst_1BDBEF6E","path":"rooms/Cena2/Cena2.yy",},
     {"name":"inst_2584ACE9","path":"rooms/Cena2/Cena2.yy",},
+    {"name":"inst_38737BE","path":"rooms/Cena2/Cena2.yy",},
+    {"name":"inst_67A0B4B6","path":"rooms/Cena2/Cena2.yy",},
   ],
   "isDnd":false,
   "layers":[

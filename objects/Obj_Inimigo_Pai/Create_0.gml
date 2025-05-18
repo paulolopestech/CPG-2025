@@ -1,6 +1,6 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
-vida = 20;
+vida = 50;
 dano = noone;
 dano_valor = 1;
 

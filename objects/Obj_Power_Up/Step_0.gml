@@ -6,11 +6,14 @@ if (instance_exists(Obj_Player)) {
         with (Obj_Player) {
             Obj_Player.poder += 20; // Corrige para usar apenas "Poder" (não "Obj_Player.poder")
 			Obj_Player.vel = Obj_Player.vel + 0.5*Obj_Player.vel;
+			if(Obj_Player.vel >3){
+				Obj_Player.vel = 3;
+			}
 	   }
 		
 		        
         // Cria 4 instâncias de Obj_Orbiting_Effect ao redor do jogador
-        for (var i = 0; i < 3; i++) {
+        for (var i = 0; i < 4; i++) {
             var angle = i * 90; // Posiciona em 0, 90, 180, 270 graus
             var orbit_radius = 32; // Distância inicial do jogador
             var new_x = Obj_Player.x + lengthdir_x(orbit_radius, angle);
@@ -23,7 +26,7 @@ if (instance_exists(Obj_Player)) {
         instance_destroy();
         
         // Verifica se precisamos criar um novo power-up
-        if (instance_number(Obj_Power_Up) < 4) {
+        if (instance_number(Obj_Power_Up) < 2) {
             // Cria novo power-up em posição aleatória válida
             create_valid_powerup();
         }

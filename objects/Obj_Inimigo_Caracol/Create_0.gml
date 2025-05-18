@@ -9,6 +9,7 @@ morreu = false;
 tempo_estado = game_get_speed(gamespeed_fps)*10;
 timer_estado = tempo_estado;
 obj_speed = 0.5
+vida = 50
 
 sprite = 
 {

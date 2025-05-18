@@ -5,7 +5,7 @@ var objects = [Obj_Inimigo_Bola, Obj_Inimigo_Caracol, Obj_Inimigo_Caveira];
 var rand = random(100); // Gera número entre 0 e 100
 var chosen_object;
 
-if (rand < 40) {
+if (rand < 30) {
 	chosen_object = Obj_Inimigo_Caracol; // 45% de chance (30 a 65)
 } else if (rand < 80) {
    chosen_object = Obj_Inimigo_Caveira; // 35% de chance (65 a 100)
@@ -22,7 +22,7 @@ var num_bolas = instance_number(Obj_Inimigo_Bola);
 var num_caracol = instance_number(Obj_Inimigo_Caracol);
 var num_caveira = instance_number(Obj_Inimigo_Caveira);
 
-if (num_bolas + num_caracol + num_caveira < 50) {
+if (num_bolas + num_caracol + num_caveira < 60) {
     instance_create_layer(spawn_x, spawn_y, "Collision", chosen_object);
 }
 

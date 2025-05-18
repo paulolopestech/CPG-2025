@@ -12,11 +12,12 @@ max_vida = 50;
 vida = max_vida;
 xp = 20;
 max_xp = 70;
-max_poder = 200;
-poder = 200;
+max_poder = 100;
+poder = 100;
 temp_dir = 0;
 //velocidade do jogador
 vel = 3;
+raio_timer = 0;
 
 poise_max = 5;
 poise = poise_max;

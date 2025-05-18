@@ -1,0 +1,1 @@
+alarm[0] = 10; // Destrói o objeto após 10 frames (ajuste conforme necessário)

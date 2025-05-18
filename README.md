@@ -59,3 +59,6 @@
 
 - SOM DO FOGO
 - SOM DO POWER UP
+- limitar dano maximo do player
+- aumentar vida dos mobs 2 a 3x
+- aumentar dano dos mobs (1.5x)

@@ -1,12 +1,12 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
-vida = 30;
+vida = 100;
 tempo_estado = game_get_speed(gamespeed_fps)*10; //tempo de 10 segundos!!
 timer_estado = tempo_estado;
 
 range = 10;
 //Criando estrutura com sprites dele
-dano_valor = 2;
+dano_valor = 15;
 
 sprite = 
 {
@@ -18,7 +18,7 @@ sprite =
 	Walk : Spr_Caveira_Idle,
 };
 
-image_index_limit = 3
+image_index_limit = 1
 
 destino_x = 0
 destino_y = 0;
@@ -100,7 +100,6 @@ estado_attack.roda = function(){
 	//Saindo do estado de ataque
 	if(image_index >= image_number - .5)
 		troca_estado(estado_idle);
-	
 }
 estado_attack.finaliza = function(){
 	

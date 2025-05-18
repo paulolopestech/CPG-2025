@@ -15,6 +15,7 @@ if (instance_exists(Obj_Player)) {
     
     // Destroi após 5 segundos
     if (timer <= 0) {
+		audio_stop_sound(Sound_Fire);
         instance_destroy();
     }
 } else {
