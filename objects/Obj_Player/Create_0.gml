@@ -1,7 +1,7 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
 lutar = true;
-max_vida = 15;
+max_vida = 20;
 vida = max_vida;
 xp = 0;
 poder = 100;

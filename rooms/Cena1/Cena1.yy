@@ -53,6 +53,7 @@
     {"name":"inst_A94AC81","path":"rooms/Cena1/Cena1.yy",},
     {"name":"inst_21725853","path":"rooms/Cena1/Cena1.yy",},
     {"name":"inst_321181FF_1","path":"rooms/Cena1/Cena1.yy",},
+    {"name":"inst_7B40B61D","path":"rooms/Cena1/Cena1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -70,6 +71,7 @@
         {"$GMRInstance":"v2","%Name":"inst_46B637CF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_46B637CF","objectId":{"name":"Obj_Collider1","path":"objects/Obj_Collider1/Obj_Collider1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.15625,"scaleY":0.75,"x":216.0,"y":231.0,},
         {"$GMRInstance":"v2","%Name":"inst_131AB096","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_131AB096","objectId":{"name":"Obj_Collider1","path":"objects/Obj_Collider1/Obj_Collider1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.15625,"scaleY":0.75,"x":275.0,"y":231.0,},
         {"$GMRInstance":"v2","%Name":"inst_2791B8B1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2791B8B1","objectId":{"name":"Obj_Collider1","path":"objects/Obj_Collider1/Obj_Collider1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":3.1875,"scaleY":0.21875,"x":197.0,"y":153.0,},
+        {"$GMRInstance":"v2","%Name":"inst_7B40B61D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7B40B61D","objectId":{"name":"obj_hud_life","path":"objects/obj_hud_life/obj_hud_life.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":32.0,},
       ],"layers":[],"name":"Collision","properties":[
         {"name":"param_sprite","type":2,"value":"Spr_Folha",},
         {"name":"param_num_particles","type":0,"value":"9",},

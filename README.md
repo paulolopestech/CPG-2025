@@ -1,6 +1,6 @@
 # UpKingDown
 
-# ESCALA: 1 - 10
+# ESCALA: 0 - 100
 
 ## Níveis de poder e características dos inimigos
 
@@ -33,4 +33,8 @@
 
 ## DINAMICA DE XP E PODER
 - na medida que a xp do personagem aumenta, seu ataque e sua vida diminuem
-- 
+- MAX: 100  
+- MIN: 0
+
+- FUNCOES DE HUD
+- PROGRESSAO DE XP E PODER
