@@ -7,7 +7,6 @@
   "inheritLayers":false,
   "instanceCreationOrder":[
     {"name":"inst_56C8A0BD_1_2","path":"rooms/Cena1/Cena1.yy",},
-    {"name":"inst_1BAFA0AF_1_2","path":"rooms/Cena1/Cena1.yy",},
     {"name":"inst_771170DC","path":"rooms/Cena1/Cena1.yy",},
     {"name":"inst_1FB95DB5","path":"rooms/Cena1/Cena1.yy",},
     {"name":"inst_2C2BACCA","path":"rooms/Cena1/Cena1.yy",},
@@ -102,6 +101,8 @@
     {"name":"inst_641D9441","path":"rooms/Cena1/Cena1.yy",},
     {"name":"inst_17D0A0D3","path":"rooms/Cena1/Cena1.yy",},
     {"name":"inst_37817199","path":"rooms/Cena1/Cena1.yy",},
+    {"name":"inst_1BAFA0AF_1_2","path":"rooms/Cena1/Cena1.yy",},
+    {"name":"inst_6E8C6BC","path":"rooms/Cena1/Cena1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -121,8 +122,9 @@
         ],"TileDataFormat":1,},"tilesetId":{"name":"Ts_Graminha","path":"tilesets/Ts_Graminha/Ts_Graminha.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRInstanceLayer":"","%Name":"Entidades","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_1BAFA0AF_1_2","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1BAFA0AF_1_2","objectId":{"name":"Obj_Player","path":"objects/Obj_Player/Obj_Player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":640.0,"y":671.0,},
-        {"$GMRInstance":"v2","%Name":"inst_17D0A0D3","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_17D0A0D3","objectId":{"name":"Obj_Npc","path":"objects/Obj_Npc/Obj_Npc.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":597.0,"y":782.0,},
+        {"$GMRInstance":"v2","%Name":"inst_17D0A0D3","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_17D0A0D3","objectId":{"name":"Obj_Npc","path":"objects/Obj_Npc/Obj_Npc.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":597.0,"y":780.0,},
         {"$GMRInstance":"v2","%Name":"inst_37817199","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_37817199","objectId":{"name":"Obj_Fala_Sozinho","path":"objects/Obj_Fala_Sozinho/Obj_Fala_Sozinho.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":12.4375,"scaleY":1.0,"x":640.0,"y":687.0,},
+        {"$GMRInstance":"v2","%Name":"inst_6E8C6BC","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6E8C6BC","objectId":{"name":"Obj_Porta","path":"objects/Obj_Porta/Obj_Porta.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.59375,"scaleY":1.0,"x":601.0,"y":774.0,},
       ],"layers":[],"name":"Entidades","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Collision","depth":300,"effectEnabled":true,"effectType":"_effect_windblown_particles","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_56C8A0BD_1_2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_56C8A0BD_1_2","objectId":{"name":"Obj_Collider1","path":"objects/Obj_Collider1/Obj_Collider1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":40.375,"scaleY":1.0,"x":3.0517578E-05,"y":-32.0,},

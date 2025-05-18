@@ -1,14 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_Inimigo_Anim",
+  "%Name":"Obj_Pause",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Obj_Inimigo_Anim",
+  "name":"Obj_Pause",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
@@ -33,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Spr_Inimigo_Anim1",
-    "path":"sprites/Spr_Inimigo_Anim1/Spr_Inimigo_Anim1.yy",
+    "name":"Spr_Title",
+    "path":"sprites/Spr_Title/Spr_Title.yy",
   },
   "spriteMaskId":null,
   "visible":true,
