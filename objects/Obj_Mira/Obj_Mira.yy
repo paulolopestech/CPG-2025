@@ -1,16 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_Power_Up",
+  "%Name":"Obj_Mira",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Obj_Power_Up",
+  "name":"Obj_Mira",
   "overriddenProperties":[],
   "parent":{
-    "name":"Interativos",
-    "path":"folders/Objetos/Interativos.yy",
+    "name":"Objetos",
+    "path":"folders/Objetos.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Spr_fogo",
-    "path":"sprites/Spr_fogo/Spr_fogo.yy",
+    "name":"Spr_Mira",
+    "path":"sprites/Spr_Mira/Spr_Mira.yy",
   },
   "spriteMaskId":null,
   "visible":true,

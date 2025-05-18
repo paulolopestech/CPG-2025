@@ -10,9 +10,10 @@ monstros_derrotados = 0;
 lutar = true;
 max_vida = 50;
 vida = max_vida;
-xp = 0;
-max_poder = 150;
-poder = 150;
+xp = 20;
+max_xp = 70;
+max_poder = 200;
+poder = 200;
 temp_dir = 0;
 //velocidade do jogador
 vel = 3;
@@ -58,10 +59,11 @@ reduzPoder = function(_decremento = 1){
 }
 
 aumentaXP = function(_incremento = 1){
-	if(xp > 100) {
+	if(xp + _incremento > max_xp) {
+		xp = max_xp;
 		return;
 	}
-	xp = xp + _incremento;
+	xp = xp + _incremento/4;
 }
 
 lida_dano = function(_dano = 1, _poise = 1){
@@ -241,6 +243,12 @@ dirIdle = 0;
 dirAttack = 0;
 
 #endregion
+
+repeat (5) {
+    var new_x = random(room_width);
+    var new_y = random(room_height);
+    instance_create_layer(new_x, new_y, "Entidades", Obj_Power_Up);
+}
 
 //inicia maquina de estado
 inicia_estado(estado_idle);

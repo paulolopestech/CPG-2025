@@ -50,3 +50,12 @@
 
 - fazer o personagem tacar fogo
 - fazer power up
+
+### MUDANÇAS:
+-  xp -> idade
+-  remover sinal de poder (apresentação)
+-  Narrativa: a idade está deixando as coisas mais dificeis
+-  
+
+- SOM DO FOGO
+- SOM DO POWER UP
