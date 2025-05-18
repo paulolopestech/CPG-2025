@@ -1,4 +1,4 @@
-if(place_meeting(x - 8, y - 15, Obj_Player))
+if(place_meeting(x, y, Obj_Player))
 {
 	if(Obj_Player.y > y)
 		depth = Obj_Player.depth + 1;

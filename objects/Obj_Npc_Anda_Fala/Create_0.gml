@@ -1,8 +1,5 @@
-if(instance_exists(Obj_Player))
-	Player = Obj_Player;
-else
-	Player = Obj_Player_Lucia;
-
+Player = Obj_Player;
+	
 i = 0;
 
 destino_x[0] = 0;
