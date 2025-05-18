@@ -1,7 +1,4 @@
 /// @description Inserir descrição aqui
-
-
-
 var _lista = ds_list_create();
 
 var _qtd = instance_place_list(x,y, Obj_Inimigo_Pai, _lista, false);

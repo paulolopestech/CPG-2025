@@ -28,14 +28,14 @@ reduzPoder = function(_decremento = 1){
 	if(poder > 0){
 		poder = poder - _decremento;
 	}
-	if(vel > 2) {
-		vel = vel - _decremento/10;
+	if(vel > 1) {
+		vel = vel - _decremento/100;
 	}
 	if(poder < 0) {
 		poder = 0;
 	}
-	if(vel < 2){
-		vel = 2
+	if(vel < 1){
+		vel = 1
 	}
 }
 
