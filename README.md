@@ -41,3 +41,12 @@
 
 - reduzir velocidade padrão do personagem ao longo do tempo
 - reduzir velocidade de sprint do personagem ao longo do tempo  
+
+- sonoplastia
+- sistema de hordas
+- sistema de pontos
+- endgame: número de monstros
+- endgame: número de pontos
+
+- fazer o personagem tacar fogo
+- fazer power up

@@ -5,3 +5,4 @@ xp = 0;
 xp_max = 100
 
 poder = 100;
+poder_max = 150;

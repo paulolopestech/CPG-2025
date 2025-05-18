@@ -6,11 +6,13 @@ if (!audio_is_playing(main_sound_theme)) {
 sword_sound = 0;
 pontos = 0
 max_pontos = 1000;
+monstros_derrotados = 0;
 lutar = true;
 max_vida = 50;
 vida = max_vida;
 xp = 0;
-poder = 250;
+max_poder = 150;
+poder = 150;
 temp_dir = 0;
 //velocidade do jogador
 vel = 3;
@@ -37,17 +39,18 @@ aumentaPontos = function(_incremento = 1){
 	if(pontos > max_pontos){
 		pontos = max_pontos;
 	}
+	monstros_derrotados = monstros_derrotados + 1;
 }
 
 reduzPoder = function(_decremento = 1){
-	if(poder > 0){
+	if(poder > 1){
 		poder = poder - _decremento;
 	}
 	if(vel > 1) {
 		vel = vel - _decremento/200;
 	}
-	if(poder < 0) {
-		poder = 0;
+	if(poder < 1) {
+		poder = 1;
 	}
 	if(vel < 1){
 		vel = 1

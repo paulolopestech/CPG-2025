@@ -102,6 +102,7 @@
     {"id":{"name":"Obj_Player","path":"objects/Obj_Player/Obj_Player.yy",},},
     {"id":{"name":"Obj_Poste_Direita","path":"objects/Obj_Poste_Direita/Obj_Poste_Direita.yy",},},
     {"id":{"name":"Obj_Poste_Frente","path":"objects/Obj_Poste_Frente/Obj_Poste_Frente.yy",},},
+    {"id":{"name":"Obj_Power_Up","path":"objects/Obj_Power_Up/Obj_Power_Up.yy",},},
     {"id":{"name":"Obj_Quadro","path":"objects/Obj_Quadro/Obj_Quadro.yy",},},
     {"id":{"name":"Obj_Screen_Shake","path":"objects/Obj_Screen_Shake/Obj_Screen_Shake.yy",},},
     {"id":{"name":"Obj_Stone","path":"objects/Obj_Stone/Obj_Stone.yy",},},
