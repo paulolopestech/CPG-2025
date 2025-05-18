@@ -38,3 +38,6 @@
 
 - FUNCOES DE HUD
 - PROGRESSAO DE XP E PODER
+
+- reduzir velocidade padrão do personagem ao longo do tempo
+- reduzir velocidade de sprint do personagem ao longo do tempo  

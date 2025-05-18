@@ -217,8 +217,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Cena1","path":"rooms/Cena1/Cena1.yy",},},
     {"roomId":{"name":"Room_testes","path":"rooms/Room_testes/Room_testes.yy",},},
+    {"roomId":{"name":"Cena1","path":"rooms/Cena1/Cena1.yy",},},
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
   ],
   "templateType":"game",
