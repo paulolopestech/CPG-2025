@@ -115,7 +115,7 @@ estado_hurt.inicia = function(){
 	Obj_Screen_Shake.valor += irandom_range(2, 6);
 	//definir sprite
 	if(vida > 0){
-		sprite_index =sprite.Hurt;
+		sprite_index = sprite.Hurt;
 		image_index = 0;
 	}
 }

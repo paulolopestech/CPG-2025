@@ -5,8 +5,9 @@ max_vida = 15;
 vida = max_vida;
 xp = 0;
 poder = 100;
+temp_dir = 0;
 //velocidade do jogador
-vel = 10;
+vel = 3;
 
 poise_max = 5;
 poise = poise_max;
@@ -57,7 +58,7 @@ lida_dano = function(_dano = 1, _poise = 1){
 estado_idle.inicia = function(){
 
 	//ajustando sprite
-	sprite_index = define_sprite(dirIdle, Spr_Player_Side_Idle, Spr_Player_Front_Idle, Spr_Player_Back_Idle);
+	sprite_index = define_sprite_diagonal(dirIdle, Spr_Player_Front_Right_Idle, Spr_Player_Back_Right_Idle);
 
 	image_index = 0;
 }
@@ -74,8 +75,11 @@ estado_idle.roda = function(){
 }
 
 estado_walk.inicia = function(){
-	dir = (point_direction(0, 0, right - left, down - up) div 90);
-	sprite_index = define_sprite(dir, Spr_Player_Side_Idle, Spr_Player_Front_Idle, Spr_Player_Back_Idle);
+	temp_dir = point_direction(0, 0, velh, velv) div 90;
+	if (temp_dir == 1 || temp_dir == 3) {
+	    dir = temp_dir;
+	}
+	sprite_index =  define_sprite_diagonal(dirIdle, Spr_Player_Front_Right_Idle, Spr_Player_Back_Right_Idle);
 	image_index = 0;
 }
 
@@ -88,12 +92,16 @@ estado_walk.roda = function(){
 		velh = velh /2;
 	}
 
-	dir = (point_direction(0, 0, velh, velv) div 90);
+	temp_dir = point_direction(0, 0, velh, velv) div 90;
+
+	if (temp_dir == 1 || temp_dir == 3) {
+	    dir = temp_dir;
+	}
+	
+	sprite_index = define_sprite_diagonal(dir, Spr_Player_Front_Right_Walk, Spr_Player_Back_Right_Walk);
 	
 	if(velh != 0) 
 		image_xscale = sign(velh);
-		
-	sprite_index = define_sprite(dir, Spr_Player_Side_Walk, Spr_Player_Front_Walk, Spr_Player_Back_Walk);
 	
 	if(up or down){
 		dirIdle = dir;
@@ -126,7 +134,7 @@ estado_attack.inicia = function(){
 	else
 		image_xscale = -1;
 	
-	sprite_index = define_sprite(dir, Spr_Player_Side_Attack, Spr_Player_Front_Attack, Spr_Player_Back_Attack);
+	sprite_index = define_sprite_diagonal(dir, Spr_Player_Front_Right_Attack, Spr_Player_Back_Right_Attack);
 	
 	var _x = x + lengthdir_x(16, dir * 90);
 	var _y = y + lengthdir_y(16, dir * 90);
@@ -147,7 +155,7 @@ estado_attack.finaliza = function(){
 }
 
 estado_hit.inicia = function(){
-	sprite_index = define_sprite(dir, Spr_Player_Side_Hit, Spr_Player_Front_Hit, Spr_Player_Back_Hit)
+	sprite_index = define_sprite_diagonal(dir, Spr_Player_Hit, Spr_Player_Hit)
 	image_index = 0;
 	velh = 0;
 	velv = 0;
@@ -168,7 +176,7 @@ estado_hit.roda = function(){
 
 #region iniciando variaveis
 //Colisao
-mask_index = Spr_Player_Front_Walk;
+mask_index = Spr_Player_Front_Right_Idle;
 
 //controles iniciados sem valor
 up = noone;

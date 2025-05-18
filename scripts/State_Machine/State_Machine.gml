@@ -44,6 +44,16 @@ function define_sprite(_dir = 0, _sprite_side, _sprite_front, _sprite_back){
 	}
 	return _sprite;
 }
+function define_sprite_diagonal(_dir = 0, _sprite_front_right, _sprite_back_right){
+	var _sprite;
+	switch(_dir){
+		case 3: _sprite = _sprite_front_right; break;
+		case 2: _sprite = _sprite_front_right; break;
+		case 1: _sprite = _sprite_back_right; break;
+		case 0: _sprite = _sprite_front_right; break;
+	}
+	return _sprite;
+}
 function define_caso_angular(_dir = 0){
 	var _caso = 0;
 	if(_dir <= 45 && _dir >= 315){

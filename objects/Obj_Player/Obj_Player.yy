@@ -41,9 +41,12 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"Spr_Player_Front_Idle",
-    "path":"sprites/Spr_Player_Front_Idle/Spr_Player_Front_Idle.yy",
+    "name":"Spr_Player_Front_Right_Idle",
+    "path":"sprites/Spr_Player_Front_Right_Idle/Spr_Player_Front_Right_Idle.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"Spr_Player_Front_Right_Idle",
+    "path":"sprites/Spr_Player_Front_Right_Idle/Spr_Player_Front_Right_Idle.yy",
+  },
   "visible":true,
 }

@@ -26,7 +26,7 @@ if(place_meeting(x - 8, y - 15, Obj_Player))
 			image_xscale = 1;
 		}	
 		else if (direction > 134 && direction < 224){
-			sprite_index = Esquerda; 
+			sprite_index = Direita; 
 			image_xscale = -1;
 		}
 		else if (direction > 44 && direction < 134)

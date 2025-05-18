@@ -15,8 +15,7 @@ thisName[1] = "Pessoa1";
 
 thisTalk[0] = "Salve!";
 
-Frente = Spr_Player_Front_Idle;
-Tras = Spr_Player_Back_Idle;
-Direita = Spr_Player_Side_Idle;
-Esquerda = Spr_Player_Side_Idle;
+Frente = Spr_Player_Front_Right_Idle;
+Tras = Spr_Player_Back_Right_Idle;
+Direita = Spr_Player_Front_Right_Idle;
 
