@@ -1,7 +1,4 @@
-if(instance_exists(Obj_Player))
-	InteragirCom = Obj_Player;
-else
-	InteragirCom = Obj_Player_Lucia;
+InteragirCom = Obj_Player;
 
 thisCharacter = noone;
 thisVoice[0] = Snd_Voice1;

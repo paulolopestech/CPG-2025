@@ -31,7 +31,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"Spr_Player_Front_Right_Idle",
+    "path":"sprites/Spr_Player_Front_Right_Idle/Spr_Player_Front_Right_Idle.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

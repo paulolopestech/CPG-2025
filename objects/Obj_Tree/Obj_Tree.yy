@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Spr_Trees",
-    "path":"sprites/Spr_Trees/Spr_Trees.yy",
+    "name":"Spr_Trees2",
+    "path":"sprites/Spr_Trees2/Spr_Trees2.yy",
   },
   "spriteMaskId":null,
   "visible":true,
