@@ -100,6 +100,7 @@
     {"id":{"name":"Obj_Screen_Shake","path":"objects/Obj_Screen_Shake/Obj_Screen_Shake.yy",},},
     {"id":{"name":"Obj_TextBox","path":"objects/Obj_TextBox/Obj_TextBox.yy",},},
     {"id":{"name":"Obj_Tree","path":"objects/Obj_Tree/Obj_Tree.yy",},},
+    {"id":{"name":"Batalhas","path":"rooms/Batalhas/Batalhas.yy",},},
     {"id":{"name":"Room_testes","path":"rooms/Room_testes/Room_testes.yy",},},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"id":{"name":"State_Machine","path":"scripts/State_Machine/State_Machine.yy",},},
@@ -214,6 +215,7 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"Room_testes","path":"rooms/Room_testes/Room_testes.yy",},},
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
+    {"roomId":{"name":"Batalhas","path":"rooms/Batalhas/Batalhas.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
