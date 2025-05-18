@@ -1,6 +1,6 @@
  /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
-
+vida = 50;
 tempo_estado = game_get_speed(gamespeed_fps)*10; //tempo de 10 segundos!!
 timer_estado = tempo_estado;
 
@@ -10,12 +10,12 @@ dano_valor = 5;
 
 sprite = 
 {
-	AttackBack : Spr_Bola_Hit,
-	Attack : Spr_Bola_Hit,
-	Death : Spr_Bola_Idle,
-	Hurt : Spr_Bola_Idle,
+	AttackBack : Spr_Bola_Atk_back,
+	Attack : Spr_Bola_Atk,
+	Death : Spr_Bola_Die,
+	Hurt : Spr_Bola_Hit,
 	Idle : Spr_Bola_Idle,
-	Walk : Spr_Bola_Idle,
+	Walk : Spr_Bola_Walk,
 };
 
 image_index_limit = 3
@@ -49,7 +49,7 @@ estado_idle.roda = function(){
 	
 	var _tempo = irandom(timer_estado);
 	if(_tempo <= tempo_estado *.01){
-		var _estado_novo = choose(estado_idle, estado_walk)
+		var _estado_novo = choose(estado_idle, estado_walk, estado_hunt, estado_hunt)
 		troca_estado(_estado_novo);
 	}
 }
@@ -153,6 +153,8 @@ estado_death.inicia = function(){
 estado_death.roda = function(){
 	if(morreu == true){
 		if(image_index >= image_number - .5){
+			Obj_Player.aumentaXP(7);
+			Obj_Player.reduzPoder(7);
 			instance_destroy();
 		}
 	}
@@ -209,7 +211,6 @@ estado_hunt.roda = function(){
 				}
 			}
 		}
-	
 	}
 }
 #endregion 

@@ -145,6 +145,8 @@ estado_death.inicia = function(){
 estado_death.roda = function(){
 	if(morreu == true){
 		if(image_index >= image_number - .5){
+			Obj_Player.aumentaXP(4);
+			Obj_Player.reduzPoder(4);
 			instance_destroy();
 		}
 	}

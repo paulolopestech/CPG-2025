@@ -7,7 +7,6 @@ if(text[page] == 0){
 	//Face
 	draw_sprite_ext(face[pessoa], round(faceSpeed), x + 28, y + 134, 1.25, 1.25, 0, c_white, 100);
 
-
 	//Text
 	draw_set_font(Fnt_Main);
 	draw_set_halign(noone);

@@ -3,11 +3,16 @@
 lutar = true;
 max_vida = 15;
 vida = max_vida;
+xp = 0;
+poder = 100;
+//velocidade do jogador
+vel = 10;
+
 poise_max = 5;
 poise = poise_max;
 
 meu_dano = noone;
-dano_poise =  6;
+dano_poise =  poder;
 imageIndex = 0;
 
 depthInicial = 0;
@@ -18,6 +23,28 @@ estado_walk = new estado();
 estado_attack = new estado();
 estado_hit = new estado();
 
+reduzPoder = function(_decremento = 1){
+	if(poder > 0){
+		poder = poder - _decremento;
+	}
+	if(vel > 2) {
+		vel = vel - _decremento/10;
+	}
+	if(poder < 0) {
+		poder = 0;
+	}
+	if(vel < 2){
+		vel = 2
+	}
+}
+
+aumentaXP = function(_incremento = 1){
+	if(xp > 100) {
+		return;
+	}
+	xp = xp + _incremento;
+}
+
 lida_dano = function(_dano = 1, _poise = 1){
 	vida -= _dano;
 	poise = max(poise - _poise, 0);
@@ -25,7 +52,6 @@ lida_dano = function(_dano = 1, _poise = 1){
 		troca_estado(estado_hit);
 	}
 }
-
 
 //meu estado precisa de um iniciar
 estado_idle.inicia = function(){
@@ -36,7 +62,6 @@ estado_idle.inicia = function(){
 	image_index = 0;
 }
 estado_idle.roda = function(){
-
 	//condicao para sair
 	if(up xor down or right xor left){
 		troca_estado(estado_walk);
@@ -110,7 +135,6 @@ estado_attack.inicia = function(){
 }
 
 estado_attack.roda = function(){
-
 	//saindo do attack quando acabar animation
 	if(image_index >= image_number - 0.3){
 		troca_estado(estado_idle);
@@ -138,7 +162,6 @@ estado_hit.roda = function(){
 	if(image_index < imageIndex){
 		troca_estado(estado_idle);
 	}
-	
 }
 
 #endregion
@@ -158,9 +181,6 @@ attack = noone;
 //iniciando parado
 velh = 0;
 velv = 0;
-
-//velocidade do jogador
-vel = 2;
 
 //controlando direção
 dir = 0;

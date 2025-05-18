@@ -1,6 +1,6 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
-
+vida = 30;
 tempo_estado = game_get_speed(gamespeed_fps)*10; //tempo de 10 segundos!!
 timer_estado = tempo_estado;
 
@@ -10,10 +10,10 @@ dano_valor = 2;
 
 sprite = 
 {
-	AttackBack : Spr_Caveira_Hit,
-	Attack : Spr_Caveira_Hit,
-	Death : Spr_Caveira_Idle,
-	Hurt : Spr_Caveira_Idle,
+	AttackBack : Spr_Caveira_Atk_back,
+	Attack : Spr_Caveira_Atk,
+	Death : Spr_Caveira_Die,
+	Hurt : Spr_Caveira_Hit,
 	Idle : Spr_Caveira_Idle,
 	Walk : Spr_Caveira_Idle,
 };
@@ -153,6 +153,8 @@ estado_death.inicia = function(){
 estado_death.roda = function(){
 	if(morreu == true){
 		if(image_index >= image_number - .5){
+			Obj_Player.aumentaXP(7);
+			Obj_Player.reduzPoder(7);
 			instance_destroy();
 		}
 	}

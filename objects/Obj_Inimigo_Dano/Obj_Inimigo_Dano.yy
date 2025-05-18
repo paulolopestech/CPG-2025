@@ -36,5 +36,5 @@
     "path":"sprites/Spr_Dano_Inimigo/Spr_Dano_Inimigo.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
